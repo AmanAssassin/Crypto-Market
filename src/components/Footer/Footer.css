@@ -1,8 +1,39 @@
-.footer{
-    text-align: center;
-    margin: auto;
-    max-width: 100%;
-    /* border-top: 1px solid #989898; */
-    padding: 20px;
-    font-size: 13px;
+.footer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -4px 20px rgba(0, 255, 255, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 60px;             /* 🔧 Smaller, proportional size */
+  height: auto;
+  filter: drop-shadow(0 0 6px #00faff);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.95;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 12px #00faff);
+  opacity: 1;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #cccccc;
+  margin-top: 0.25rem;
 }

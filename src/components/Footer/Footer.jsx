@@ -1,12 +1,16 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import amLogo from '../../assets/aman.svg';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className='footer'>
-        <p>Copyright @2025 ,Crypto Market - By Aman Maurya</p>
-    </div>
-  )
-}
+    <footer className="footer">
+      <div className="logo-container">
+        <img src={amLogo} alt="AM Logo" className="logo" />
+      </div>
+      <p>&copy; 2025 Aman Maurya — All Rights Reserved</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
